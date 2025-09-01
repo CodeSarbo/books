@@ -38,26 +38,31 @@ export default function Home() {
               title: "Historia del rey transparente",
               author: "Rosa Montero",
               img: "/image/historia.jpg",
+              releaseDate: "September 2005",
             },
             {
               title: "We Were Girls Once",
               author: "Aiwanose Odafen",
               img: "/image/wewere.jpeg",
+              releaseDate: "March 2024",
             },
             {
               title: "A Mask, the Colour of the Sky (قناع بلون السماء)",
               author: "Basim Khandaqji",
               img: "/image/a mask.jpeg",
+              releaseDate: "October 2023",
             },
             {
               title: "Ramcharitmanas",
               author: "Tulsidas",
               img: "/image/ramcharitmanas.jpeg",
+              releaseDate: "1574 (exact month unknown)",
             },
             {
-              title: "ier (Greed)",
+              title: "Gier (Greed)",
               author: "Elfriede Jelinek",
               img: "/image/greed.jpeg",
+              releaseDate: "2000",
             },
           ].map((book, index) => (
             <div
@@ -75,6 +80,9 @@ export default function Home() {
                 {book.title}
               </h3>
               <p className="text-sm text-[#6a5c45]">{book.author}</p>
+              <p className="text-sm text-[#8b7d65] italic">
+                Release Date: {book.releaseDate}
+              </p>
             </div>
           ))}
         </div>
